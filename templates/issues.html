@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Issues</title>
+</head>
+<body>
+    <div align="center">
+        <h1>OUTPUT TABLE</h1>
+        
+            <table border="1">
+                
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Direction</th>
+                        <th>Issue</th>
+                        <th>Time</th>
+                        <th>UI Result</th>
+                    </tr>
+                </thead>
+                {% for table in tables %}
+                <tbody>
+                    <tr>
+                        <td>
+                            <!-- <img src="{{ url_for('static', filename=table[0]) }}" alt="Your Image" style="width: 250px; height: 250px;"> -->
+                            <img src="/img/{{ table[0] }}" alt="Your Image" style="width: 250px; height: 250px;">
+
+                        </td>
+                        <td>
+                            <p>{{ table[1] }}</p>
+                        </td>
+                        <td>
+                            <p>{{ table[2] }}</p>
+                        </td>
+                        <td>
+                            <p>{{ table[3] }}</p>
+                        </td>
+                        <td>
+                            <p>{{ table[4] }}</p>
+                        </td>
+                    </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+        
+    </div>
+</body>
+</html>

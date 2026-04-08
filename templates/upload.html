@@ -1,0 +1,18 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form action="/process_upload" method="post" enctype="multipart/form-data">
+        <h1>Kinldy upload good quality Image</h1>
+        <input type="text" name="membership_no" placeholder="Enter the membership no" required><br><br><br>
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+</body> 
+</html>
